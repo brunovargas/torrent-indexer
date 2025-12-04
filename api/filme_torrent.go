@@ -261,7 +261,7 @@ func getTorrentsFilmeTorrent(ctx context.Context, i *Indexer, link, referer stri
 			}
 
 			ixt := schema.IndexedTorrent{
-				Title:         releaseTitle,
+				Title:         processedTitle,
 				OriginalTitle: processedTitle,
 				Details:       link,
 				Year:          year,
